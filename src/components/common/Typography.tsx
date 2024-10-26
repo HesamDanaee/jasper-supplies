@@ -1,3 +1,4 @@
+import { cn } from "@/libs/classNames";
 import { ReactNode, HTMLAttributes } from "react";
 
 interface TypographyProps extends HTMLAttributes<HTMLElement> {
@@ -12,6 +13,7 @@ interface TypographyProps extends HTMLAttributes<HTMLElement> {
     | "body2"
     | "caption";
   children: ReactNode;
+  fontWeight?: "light" | "normal" | "medium" | "bold";
   className?: string;
 }
 
@@ -53,16 +55,30 @@ const getVariantClasses = (
   return `${baseClasses[variant ?? "body1"]} ${className}`;
 };
 
+const fontWeightClasses = {
+  light: "font-light",
+  normal: "font-normal",
+  medium: "font-medium",
+  bold: "font-bold",
+};
+
 function Typography({
   variant = "body1",
   children,
+  fontWeight,
   className = "",
   ...rest
 }: TypographyProps) {
   const Tag = getVariantTag(variant);
 
   return (
-    <Tag className={getVariantClasses(variant, className)} {...rest}>
+    <Tag
+      className={cn(
+        getVariantClasses(variant, className),
+        fontWeight ? fontWeightClasses[fontWeight] : ""
+      )}
+      {...rest}
+    >
       {children}
     </Tag>
   );
