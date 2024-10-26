@@ -24,6 +24,7 @@
       "@/layouts/*": ["./src/layouts/*"],
       "@/libs/*": ["./src/libs/*"],
       "@/configs/*": ["./src/configs/*"],
+      "@/public/*": ["./public/*"],
  
     }
   },
