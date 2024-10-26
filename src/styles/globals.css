@@ -11,12 +11,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #bfb39b;
+  --secondary: #415a62;
+  --tertiary: #96a3ab;
+  --accent: #242124;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #bfb39b;
+    --secondary: #415a62;
+    --tertiary: #96a3ab;
+    --accent: #242124;
   }
 }
 
