@@ -20,7 +20,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ffffff;
     --primary: #bfb39b;
     --secondary: #415a62;
     --tertiary: #96a3ab;
@@ -38,4 +38,19 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/*  - * - * - Scrollbar - * - * - */
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--accent);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 2px;
 }
