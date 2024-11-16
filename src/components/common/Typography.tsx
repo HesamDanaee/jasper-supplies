@@ -13,7 +13,16 @@ interface TypographyProps extends HTMLAttributes<HTMLElement> {
     | "body2"
     | "caption";
   children: ReactNode;
-  fontWeight?: "light" | "normal" | "medium" | "bold";
+  fontWeight?:
+    | "thin"
+    | "extralight"
+    | "light"
+    | "normal"
+    | "medium"
+    | "semibold"
+    | "bold"
+    | "black"
+    | "extrablack";
   className?: string;
 }
 
@@ -56,16 +65,22 @@ const getVariantClasses = (
 };
 
 const fontWeightClasses = {
+  thin: "font-thin",
+  extralight: "font-extralight",
   light: "font-light",
   normal: "font-normal",
   medium: "font-medium",
+  semibold: "font-semibold",
   bold: "font-bold",
+  black: "font-black",
+  extrablack: "font-extrablack",
 };
 
 function Typography({
   variant = "body1",
   children,
   fontWeight,
+  color,
   className = "",
   ...rest
 }: TypographyProps) {
@@ -75,7 +90,8 @@ function Typography({
     <Tag
       className={cn(
         getVariantClasses(variant, className),
-        fontWeight ? fontWeightClasses[fontWeight] : ""
+        fontWeight ? fontWeightClasses[fontWeight] : "",
+        color ?? "text-foreground"
       )}
       {...rest}
     >

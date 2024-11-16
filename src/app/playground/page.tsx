@@ -1,5 +1,5 @@
-import Flex from "@/components/Flex";
-import Slider from "@/containers/home/components/slider/Slider";
+import Flex from "@/components/common/Flex";
+import Slider from "@/components/slider/Slider";
 
 export default function Playground() {
   return (

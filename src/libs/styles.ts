@@ -1,5 +1,3 @@
-// Flex-related class mappings
-
 export const justifyClasses = {
   start: "justify-start",
   center: "justify-center",

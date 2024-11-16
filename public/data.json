@@ -1,7 +1,1662 @@
 {
-    "header": {},
-    "pages": {
-        "home": {}
+    "header": {
+        "logo": "",
+        "navigation": {
+            "initial": {
+                "color": "#7800e6"
+            },
+            "animate": {
+                "color": [
+                    "#7800e6",
+                    "#0099e6",
+                    "#e66a00",
+                    "#765293",
+                    "#d6aa0f",
+                    "#68af37",
+                    "#7800e6"
+                ]
+            },
+            "transition": {
+                "duration": 50,
+                "ease": "easeInOut",
+                "type": "tween",
+                "bounce": 0.25,
+                "repeat": -1
+            },
+            "links": [
+                {
+                    "name": "home",
+                    "url": "/"
+                },
+                {
+                    "name": "company",
+                    "url": "/company"
+                },
+                {
+                    "name": "products",
+                    "url": "/products"
+                },
+                {
+                    "name": "packagings",
+                    "url": "/packagings"
+                },
+                {
+                    "name": "certification",
+                    "url": "/certification"
+                },
+                {
+                    "name": "sustainability",
+                    "url": "/sustainability"
+                },
+                {
+                    "name": "news",
+                    "url": "/news"
+                },
+                {
+                    "name": "contactus",
+                    "url": "/contactus"
+                }
+            ]
+        },
+        "cta": [
+            {
+                "name": "en",
+                "options": [
+                    {
+                        "name": "en",
+                        "id": "en"
+                    },
+                    {
+                        "name": "it",
+                        "id": "it"
+                    }
+                ]
+            },
+            {
+                "name": "contact us",
+                "url": "/contactus",
+                "icon": "phone"
+            }
+        ]
     },
-    "footer": {}
+    "pages": {
+        "home": {
+            "hero": {
+                "motion": {
+                    "initial": {
+                        "background-color": "#c280ff"
+                    },
+                    "animate": {
+                        "background-color": [
+                            "#c280ff",
+                            "#66CCFF",
+                            "#FFF8F2",
+                            "#E0D6E8",
+                            "#F1C93B",
+                            "#BFE3A6",
+                            "#c280ff"
+                        ]
+                    },
+                    "transition": {
+                        "duration": 50,
+                        "ease": "easeInOut",
+                        "type": "tween",
+                        "bounce": 0.25,
+                        "repeat": -1
+                    }
+                },
+                "slider": {
+                    "slides": [
+                        {
+                            "name": "biscuits",
+                            "initial": {
+                                "opacity": 0,
+                                "scale": 0.5
+                            },
+                            "animate": {
+                                "opacity": {
+                                    "active": 1,
+                                    "default": 0
+                                },
+                                "scale": {
+                                    "active": 1,
+                                    "default": 0.5
+                                }
+                            },
+                            "transition": {
+                                "opacity": {
+                                    "duration": 0.5
+                                },
+                                "scale": {
+                                    "duration": 0.5,
+                                    "ease": "easeInOut"
+                                }
+                            },
+                            "items": [
+                                {
+                                    "src": "/assets/biscuits&wafer/Wafer.png",
+                                    "name": "wafer",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "40%",
+                                        "translateX": "-80%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.65
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/biscuits&wafer/Spiral-Cookie.png",
+                                    "name": "spiral-cookie",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-250%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/biscuits&wafer/Jam-Ring.png",
+                                    "name": "jam-ring",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "150%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.5
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/biscuits&wafer/Fig-Bar.png",
+                                    "name": "fig-bar",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-180%",
+                                        "translateX": "-250%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.2
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/biscuits&wafer/Digestive.png",
+                                    "name": "digestive",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-180%",
+                                        "translateX": "120%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.4
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/biscuits&wafer/Crumbs.png",
+                                    "name": "crumbs",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1.2,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate"
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/biscuits&wafer/Chocolate.png",
+                                    "name": "chocolate",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-250%",
+                                        "translateX": "-60%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.3
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/biscuits&wafer/Chocolate-Chip.png",
+                                    "name": "chocolate-chip",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "60%",
+                                        "translateX": "-25%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.6
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/biscuits&wafer/Biscuits&Chocolate.png",
+                                    "name": "title",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sea",
+                            "initial": {
+                                "translateY": "100%"
+                            },
+                            "items": [
+                                {
+                                    "src": "/assets/sea_products/sea.png",
+                                    "name": "sea-products__sea",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1.9,
+                                        "opacity": 1,
+                                        "translateY": "-30%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/sea_products/caviar.png",
+                                    "name": "sea-products__caviar",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1.4,
+                                        "opacity": 1,
+                                        "translateY": "100%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/sea_products/seaProducts.png",
+                                    "name": "sea-products__title",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-210%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/sea_products/fish1.png",
+                                    "name": "sea-products__fish1",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "50%",
+                                        "translateX": "-250%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/sea_products/fish2.png",
+                                    "name": "sea-products__fish2",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-120%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/sea_products/fish3.png",
+                                    "name": "sea-products__fish3",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-230%",
+                                        "translateX": "80%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/sea_products/fish4.png",
+                                    "name": "sea-products__fish4",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "35%",
+                                        "translateX": "50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "animal",
+                            "initial": {
+                                "translateY": "100%"
+                            },
+                            "items": [
+                                {
+                                    "src": "/assets/animal/Milk.png",
+                                    "name": "milk",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1.5,
+                                        "opacity": 1,
+                                        "translateY": "-160%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/animal/Field.png",
+                                    "name": "field",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1.9,
+                                        "opacity": 1,
+                                        "translateY": "0%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/animal/Animals.png",
+                                    "name": "animals",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 2,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/animal/AnimalProducts.png",
+                                    "name": "title",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-205%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "herbs",
+                            "initial": {
+                                "translateY": "100%"
+                            },
+                            "items": [
+                                {
+                                    "src": "/assets/herbs&spices/Saffron.png",
+                                    "name": "saffaron",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1.3,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/herbs&spices/Cardamom.png",
+                                    "name": "cardamom",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-180%",
+                                        "translateX": "180%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.5
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/herbs&spices/Flower.png",
+                                    "name": "flower",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-180%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.4
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/herbs&spices/Mild-Green.png",
+                                    "name": "mild-green",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "25%",
+                                        "translateX": "-300%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/herbs&spices/Narrow-Flower.png",
+                                    "name": "narrow-flower",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "30%",
+                                        "translateX": "200%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.7
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/herbs&spices/Narrow-Yellow.png",
+                                    "name": "narrow-yellow",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-60%",
+                                        "translateX": "-350%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.2
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/herbs&spices/Orange-Spring.png",
+                                    "name": "orange-spring",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-160%",
+                                        "translateX": "-280%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.3
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/herbs&spices/Parsley.png",
+                                    "name": "parsley",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/herbs&spices/Pink-Flower.png",
+                                    "name": "pinkFlower",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-80%",
+                                        "translateX": "220%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.6
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/herbs&spices/Herbs&Spices.png",
+                                    "name": "title",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "honey",
+                            "initial": {
+                                "translateY": "100%"
+                            },
+                            "items": [
+                                {
+                                    "src": "/assets/honey/Hive.png",
+                                    "name": "hive",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1.8,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/honey/Bee-Medium.png",
+                                    "name": "bee-medium",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-170%",
+                                        "translateX": "130%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/honey/Bee-Small.png",
+                                    "name": "bee-small",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-150%",
+                                        "translateX": "-200%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/honey/Beeswax.png",
+                                    "name": "beeswax",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "100%",
+                                        "translateX": "-20%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/honey/Honey.png",
+                                    "name": "honey",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1.5,
+                                        "opacity": 1,
+                                        "translateY": "-150%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "nuts",
+                            "initial": {
+                                "translateY": "100%"
+                            },
+                            "items": [
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Almonds.png",
+                                    "name": "almonds",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-180%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.3
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Cashew.png",
+                                    "name": "cashew",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-220%",
+                                        "translateX": "-230%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.2
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Dates.png",
+                                    "name": "dates",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-250%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Fig.png",
+                                    "name": "fig",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-220%",
+                                        "translateX": "110%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.4
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Hazelnut.png",
+                                    "name": "hazelnut",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-70%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Pistachio.png",
+                                    "name": "pistachio",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "25%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.7
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Plum.png",
+                                    "name": "plum",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "80%",
+                                        "translateX": "-240%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.8
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Raisins.png",
+                                    "name": "raisins",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-60%",
+                                        "translateX": "200%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.5
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Walnut.png",
+                                    "name": "Walnut",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "80%",
+                                        "translateX": "125%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.6
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                },
+                                {
+                                    "src": "/assets/nuts&dried_fruits/Nuts&DriedFruits.png",
+                                    "name": "nuts&driedFruits",
+                                    "initial": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "animate": {
+                                        "scale": 1,
+                                        "opacity": 1,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    },
+                                    "transition": {
+                                        "duration": 1,
+                                        "ease": "anticipate",
+                                        "delay": 0.1
+                                    },
+                                    "exit": {
+                                        "scale": 0.5,
+                                        "opacity": 0,
+                                        "translateY": "-50%",
+                                        "translateX": "-50%"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "blobs": {
+                        "initial": {
+                            "d": "M250,452.0833333333333C373.83333333333326,452.0833333333333,492.5798319327731,373.83333333333326,492.5798319327731,250C492.5798319327731,114.61009174311931,386.6068807339449,1.5625,250,1.5625C113.58409090909091,1.5625,4.278431818181819,113.58409090909091,4.278431818181818,250C4.278431818181817,374.1511363636363,129.84886363636362,452.0833333333333,250,452.0833333333333",
+                            "fill": "#aa4dff"
+                        },
+                        "animate": {
+                            "d": [
+                                "M250,452.0833333333333C373.83333333333326,452.0833333333333,492.5798319327731,373.83333333333326,492.5798319327731,250C492.5798319327731,114.61009174311931,386.6068807339449,1.5625,250,1.5625C113.58409090909091,1.5625,4.278431818181819,113.58409090909091,4.278431818181818,250C4.278431818181817,374.1511363636363,129.84886363636362,452.0833333333333,250,452.0833333333333"
+                            ],
+                            "fill": [
+                                "#aa4dff",
+                                "#66CCFF",
+                                "#FFF8F2",
+                                "#E0D6E8",
+                                "#F1C93B",
+                                "#BFE3A6",
+                                "#aa4dff"
+                            ]
+                        },
+                        "transition": {
+                            "duration": 60,
+                            "ease": "easeInOut",
+                            "type": "tween",
+                            "bounce": 0.25,
+                            "repeat": -1
+                        }
+                    },
+                    "bar": {
+                        "initial": {
+                            "stroke": "#aa4dff"
+                        },
+                        "animate": {
+                            "stroke": [
+                                "#aa4dff",
+                                "#66CCFF",
+                                "#FFF8F2",
+                                "#E0D6E8",
+                                "#F1C93B",
+                                "#BFE3A6",
+                                "#aa4dff"
+                            ]
+                        },
+                        "transition": {
+                            "duration": 60,
+                            "ease": "easeInOut",
+                            "type": "tween",
+                            "bounce": 0.25,
+                            "repeat": -1
+                        },
+                        "line": {
+                            "initial": {
+                                "top": "100%",
+                                "height": "60%",
+                                "translateY": "-100%",
+                                "transform-origin": "top",
+                                "rotate": 38
+                            },
+                            "animate": {
+                                "rotate": [
+                                    38,
+                                    17,
+                                    -17,
+                                    -41,
+                                    -66,
+                                    -94,
+                                    38
+                                ],
+                                "height": [
+                                    "60%",
+                                    "40%",
+                                    "50%",
+                                    "57%",
+                                    "57%",
+                                    "58%",
+                                    "60%"
+                                ]
+                            },
+                            "transition": {
+                                "duration": 60,
+                                "ease": "easeInOut",
+                                "type": "tween",
+                                "bounce": 0.25,
+                                "repeat": -1
+                            },
+                            "dot": {
+                                "initial": {
+                                    "border-color": "#aa4dff",
+                                    "transform-origin": "center"
+                                },
+                                "animate": {
+                                    "border-color": [
+                                        "#aa4dff",
+                                        "#66CCFF",
+                                        "#FFF8F2",
+                                        "#E0D6E8",
+                                        "#F1C93B",
+                                        "#BFE3A6",
+                                        "#aa4dff"
+                                    ]
+                                },
+                                "transition": {
+                                    "duration": 60,
+                                    "ease": "easeInOut",
+                                    "type": "tween",
+                                    "bounce": 0.25,
+                                    "repeat": -1
+                                }
+                            }
+                        }
+                    },
+                    "colors": [
+                        "biscuits",
+                        "sea",
+                        "animal",
+                        "herbs",
+                        "honey",
+                        "nuts"
+                    ]
+                }
+            },
+            "content_blocks": [
+                {
+                    "title": "MORE THAN A SUPPLIER…",
+                    "subtitle": "Trust us to be your source of knowledge and quality.",
+                    "description": "Jasper Global Supplies specializes in general trading, offering a diverse range of products tailored to meet the needs of our global customers. We provide expert advice on product quality, market trends, and sourcing strategies, ensuring informed decision-making. Alongside top-quality goods, we offer commercial and financial solutions to streamline the supply process. Trust us for a comprehensive approach to global trade, combining product expertise with strategic guidance.",
+                    "block_name": "company",
+                    "cta": "See Full Story",
+                    "photo": "/assets/MoreThanACompany.svg"
+                },
+                {
+                    "title": "PRIME TREASURES",
+                    "subtitle": "",
+                    "description": "Our export and import company is dedicated to supplying premium products that are carefully curated to meet the specific needs of our valued customers markets. With a focus on quality and market alignment, we offer a diverse selection of top-tier goods across various industries. Each product is chosen for its superior standards, ensuring it meets the demands and preferences of global consumers. We pride ourselves on delivering tailored solutions that support the growth and success of our customers in their respective markets.",
+                    "block_name": "treasures",
+                    "cta": "See Full Story",
+                    "photo": "/assets/PrimeTreasures.svg"
+                },
+                {
+                    "title": "ECO-FRIENDLY CHAINS",
+                    "subtitle": "Sustainability from supply chain to eco-friendly logistics",
+                    "description": "We are committed to sustainability across all facets of general trading, from responsible supply chain management to efficient, eco-friendly logistics. We offer a wide variety of products, ensuring that both quality and environmental impact are carefully managed. As industry professionals, we provide clients with in-depth knowledge of sustainable sourcing practices, market dynamics, and product quality standards. Rely on us for expert solutions that drive both business growth and sustainable practices in global trade.",
+                    "block_name": "sustainability",
+                    "cta": "See Full Story",
+                    "photo": "/assets/friendly.svg"
+                }
+            ]
+        }
+    },
+    "footer": {
+        "main": {
+            "company": {
+                "logo": "/logo.svg",
+                "slogan": "Connecting Markets, Bridging Continents",
+                "signature": "Jasper Supplies, 2024."
+            },
+            "links": [
+                {
+                    "title": "Company",
+                    "links": [
+                        {
+                            "name": "About Us",
+                            "url": "/aboutus"
+                        },
+                        {
+                            "name": "Contact Us",
+                            "url": "/contactus"
+                        },
+                        {
+                            "name": "Careers",
+                            "url": "/careers"
+                        },
+                        {
+                            "name": "Blog",
+                            "url": "/blog"
+                        }
+                    ]
+                },
+                {
+                    "title": "Customer",
+                    "links": [
+                        {
+                            "name": "FAQ",
+                            "url": "/faq"
+                        },
+                        {
+                            "name": "Shipping & Returns",
+                            "url": "/shippingandreturns"
+                        },
+                        {
+                            "name": "Support",
+                            "url": "/support"
+                        },
+                        {
+                            "name": "Blog",
+                            "url": "/blog"
+                        }
+                    ]
+                },
+                {
+                    "title": "Legal Information",
+                    "links": [
+                        {
+                            "name": "Privacy Policy",
+                            "url": "/privacypolicy"
+                        },
+                        {
+                            "name": "Terms of Service",
+                            "url": "/termsofservice"
+                        }
+                    ]
+                }
+            ],
+            "contact-details": [
+                {
+                    "name": "address",
+                    "value": "No. 20.2, West Eram Ave., Bakery Hwy, Tehran, Iran",
+                    "link": "#"
+                },
+                {
+                    "name": "postal",
+                    "value": "1484684007",
+                    "link": "#"
+                },
+                {
+                    "name": "tel",
+                    "value": "+98 21 44 64 66 04",
+                    "link": "#"
+                },
+                {
+                    "name": "email",
+                    "value": "Info@Jasper-Supplies.com",
+                    "link": "#"
+                }
+            ]
+        },
+        "bottom": {
+            "copyright": "© 2024 Your Company Name. All rights reserved.",
+            "socials": [
+                {
+                    "name": "instagram",
+                    "url": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "url": "#"
+                },
+                {
+                    "name": "x",
+                    "url": "#"
+                },
+                {
+                    "name": "youtube",
+                    "url": "#"
+                }
+            ]
+        }
+    }
 }
