@@ -6,7 +6,7 @@ interface UseTimerProps {
 }
 
 export default function useTimer({ duration, onExpire }: UseTimerProps) {
-  const [restart, setRestart] = useState(false);
+  const [, setRestart] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {

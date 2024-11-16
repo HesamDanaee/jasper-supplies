@@ -7,11 +7,7 @@ interface SlideProps {
   changeSlide: () => void;
 }
 
-export default function Slide({
-  slide: { name, initial, animate, transition, items },
-
-  changeSlide,
-}: SlideProps) {
+export default function Slide({ slide: { name, items } }: SlideProps) {
   return (
     <AnimatePresence mode="wait">
       <motion.div

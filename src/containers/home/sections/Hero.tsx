@@ -2,7 +2,6 @@
 import Box from "@/components/common/Box";
 import Slider from "@/components/slider/Slider";
 import React from "react";
-import { ISlider } from "@/components/slider/Slider.type";
 import heroData from "@/public/data.json";
 import { motion } from "framer-motion";
 
@@ -23,7 +22,8 @@ export default function Hero() {
       className="w-full h-[60dvh] flex justify-center items-center"
     >
       <Box className="w-[480px] h-[480px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <Slider props={slider as ISlider} />
+        {/* @ts-expect-error change it later */}
+        <Slider props={slider} />
       </Box>
     </motion.div>
   );

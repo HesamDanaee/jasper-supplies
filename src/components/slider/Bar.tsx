@@ -7,7 +7,7 @@ interface BarProps {
   activeSlide: number;
 }
 
-export default function Bar({ props, activeSlide }: BarProps) {
+export default function Bar({ props }: BarProps) {
   const { initial, animate, transition, line } = props;
 
   return (

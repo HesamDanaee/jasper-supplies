@@ -13,10 +13,7 @@ import Button from "@/components/common/Button";
 export default function Home() {
   const {
     pages: {
-      home: {
-        content_blocks,
-        hero: { slider },
-      },
+      home: { content_blocks },
     },
   } = sections;
 

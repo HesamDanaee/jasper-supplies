@@ -1,5 +1,5 @@
 "use client";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Flex from "@/components/common/Flex";
 import List from "@/components/common/List";
 import Typography from "@/components/common/Typography";
