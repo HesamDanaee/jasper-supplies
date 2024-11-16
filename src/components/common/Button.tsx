@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes, ReactNode } from "react";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
   variant?: "contained" | "outlined" | "text";
-  color?: "primary" | "secondary" | "default";
+  color?: "primary" | "secondary" | "default" | "none";
   size?: "small" | "medium" | "large";
   startIcon?: ReactNode;
   endIcon?: ReactNode;
@@ -23,15 +23,17 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const variantClasses = {
-    contained: "bg-blue-500 text-white border-none",
-    outlined: "border border-blue-500 text-blue-500 bg-transparent",
-    text: "bg-transparent text-blue-500 border-none",
+    contained: "bg-primary text-foreground border-none rounded-xs",
+    outlined:
+      "border border-text-tertiary text-tertiary bg-transparent rounded-xs",
+    text: "bg-transparent text-tertiary border-none rounded-xs",
   };
 
   const colorClasses = {
-    primary: "bg-blue-500 text-white",
-    secondary: "bg-green-500 text-white",
-    default: "bg-gray-500 text-white",
+    primary: "bg-primary text-foreground",
+    secondary: "bg-secondary text-foreground",
+    default: "bg-tertiary text-foreground",
+    none: "bg-transparent text-",
   };
 
   const sizeClasses = {

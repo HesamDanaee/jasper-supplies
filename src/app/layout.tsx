@@ -1,25 +1,21 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Kite_One, Contrail_One } from "next/font/google";
 
 import "../styles/globals.css";
+import { Providers } from "./Providers";
 import Header from "@/layouts/Header/Header";
 import Footer from "@/layouts/Footer";
-import { Providers } from "./Providers";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
-const raleway = Raleway({
+const kiteone = Kite_One({
   subsets: ["latin"],
-  display: "swap",
+  variable: "--font-primary",
+  weight: ["400"],
+});
+
+const contrailOne = Contrail_One({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-secondary",
 });
 
 export const metadata: Metadata = {
@@ -34,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${raleway.className} antialiased`}>
+      <body
+        className={`${contrailOne.variable} ${kiteone.className} antialiased`}
+      >
         <Providers>
           <Header />
           {children}

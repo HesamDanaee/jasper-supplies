@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    module: { rules: [ { test: /\.svg$/, use: ['@svgr/webpack'], }, ], }
+};
 
 export default nextConfig;
