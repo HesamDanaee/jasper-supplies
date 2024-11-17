@@ -70,6 +70,7 @@ export default function MenuButton({
       onClick={onClick}
       className="w-[40px] h-[40px] cursor-pointer bg-snow shadow-sm rounded-full justify-center items-center"
     >
+      {/* @ts-expect-error resolve later */}
       <motion.svg
         viewBox={`0 0 ${unitWidth} ${unitHeight}`}
         overflow="visible"
