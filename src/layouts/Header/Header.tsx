@@ -20,6 +20,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/common/dropdown-menu";
 import Container from "@/components/common/Container";
+import BurgerMenu from "./BurgerMenu";
 
 export default function Header() {
   const [passedHeight, setPassedHeight] = useState(false);
@@ -51,7 +52,11 @@ export default function Header() {
     >
       <Container maxWidth="full">
         <Flex align="center" justify="between" className="w-full">
-          <Flex align="center" justify="center" className="basis-1/6">
+          <Flex
+            align="center"
+            justify="center"
+            className="basis-1/6 max-md:basis-3/6 max-md:justify-start"
+          >
             {/* - * - * - Logo - * - * - */}
             <Link href="/">
               <Image
@@ -59,7 +64,7 @@ export default function Header() {
                 src={logo}
                 width={200}
                 height={200}
-                className="w-16 h-auto relative before:w-full before:h-2 before:bg-secondary before:absolute before:top-0 before:left-0"
+                className="w-16 h-16 md:min-w-16 md:min-h-16 max-md:w-13 max-md:h-13 relative before:w-full before:h-2 before:bg-secondary before:absolute before:top-0 before:left-0"
               />
             </Link>
           </Flex>
@@ -69,17 +74,30 @@ export default function Header() {
             align="center"
             justify="center"
             gap="gap-x-4"
-            className="basis-4/6"
+            className="basis-4/6 max-md:hidden"
           >
             <List
               list={navigation.links}
               className="gap-x-7 items-center py-10"
               callback={({ name, url }, index) => (
-                <Link key={`${name}-${index}`} href={url} className="link">
+                <Link
+                  key={`${name}-${index}`}
+                  href={url}
+                  className={cn(
+                    "link",
+                    index === navigation.links.length - 1
+                      ? "max-2xl:hidden"
+                      : index === navigation.links.length - 2
+                      ? "max-xl:hidden"
+                      : index === navigation.links.length - 3
+                      ? "max-lg:hidden"
+                      : "max-md:hidden"
+                  )}
+                >
                   <Typography
                     variant="h6"
                     fontWeight="normal"
-                    className="uppercase"
+                    className="uppercase max-lg:text-sm max-md:text-xs"
                   >
                     <motion.div
                       initial={navigation.initial}
@@ -100,9 +118,13 @@ export default function Header() {
             />
           </Flex>
           {/* - * - * - CTA Buttons - * - * - */}
-          <Flex align="center" justify="center" className="w-full basis-1/6">
+          <Flex
+            align="center"
+            justify="center"
+            className="w-full basis-1/6 max-md:hidden"
+          >
             <List
-              className="gap-x-2"
+              className="gap-x-4"
               list={cta}
               callback={({ name, url, options }) =>
                 url ? (
@@ -110,16 +132,30 @@ export default function Header() {
                     <Button
                       variant="contained"
                       color="primary"
-                      startIcon={<Phone className="w-6 h-6" />}
+                      startIcon={<Phone className="w-6 h-6 text-snow" />}
                     >
-                      <Typography variant="body1" fontWeight="medium">
+                      <Typography
+                        variant="body1"
+                        fontWeight="medium"
+                        className="max-md:text-sm"
+                        color="text-snow"
+                      >
                         {name}
                       </Typography>
                     </Button>
                   </Link>
                 ) : (
                   <DropdownMenu>
-                    <DropdownMenuTrigger>{name}</DropdownMenuTrigger>
+                    <DropdownMenuTrigger className="py-2 px-3 rounded-sm bg-primary">
+                      <Typography
+                        variant="body1"
+                        fontWeight="medium"
+                        className="max-md:text-sm"
+                        color="text-snow"
+                      >
+                        {name}
+                      </Typography>
+                    </DropdownMenuTrigger>
                     <DropdownMenuContent className="w-auto ">
                       {options?.map(({ name, id }) => (
                         <DropdownMenuItem key={id}>{name}</DropdownMenuItem>
@@ -129,6 +165,15 @@ export default function Header() {
                 )
               }
             />
+          </Flex>
+
+          <Flex
+            align="center"
+            justify="end"
+            className="basis-3/6 justify-end hidden max-md:flex"
+          >
+            {/* - * - * - BurgerMenu - * - * - */}
+            <BurgerMenu />
           </Flex>
         </Flex>
       </Container>

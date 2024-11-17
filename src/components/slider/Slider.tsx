@@ -27,7 +27,7 @@ export default function Slider({ props }: SliderProps) {
   });
 
   return (
-    <Flex className="w-[500px] h-[500px] relative">
+    <Flex className="w-[500px] h-[500px] max-md:w-[350px] max-md:h-[350px] relative">
       {/* - * - * - Blob - * - * - */}
 
       <Blob

@@ -18,14 +18,14 @@ export default function Home() {
   } = sections;
 
   return (
-    <Box className="h-auto !bg-white">
+    <Box className="h-auto bg-gradient-to-b from-white via-babypowder to-smoke">
       <Hero />
 
       <Flex className="bg-foreground/5">
         <Flex
           align="center"
           justify="center"
-          className="w-full h-auto pt-[240px] pb-12"
+          className="w-full h-auto pt-32 pb-12"
         >
           <Container maxWidth="7xl">
             <List
@@ -41,19 +41,22 @@ export default function Home() {
               }) => (
                 <Flex
                   className={cn(
-                    block_name === "treasures" ? "flex-row-reverse" : "flex-row"
+                    block_name === "treasures"
+                      ? "flex-row-reverse"
+                      : "flex-row",
+                    "flex-wrap max-md:px-10 max-sm:px-3"
                   )}
                 >
                   <Flex
-                    className={cn("basis-1/2")}
+                    className={cn("basis-1/2 max-md:basis-full")}
                     direction="column"
-                    gap="gap-y-12 py-20"
+                    gap="gap-y-12 py-20 max-md:gap-y-4"
                   >
                     <Typography
                       variant="h1"
                       fontWeight="black"
                       color="text-primary"
-                      className="text-6xl tracking-widest"
+                      className="text-6xl max-md:text-3xl tracking-widest"
                     >
                       {title}
                     </Typography>
@@ -78,7 +81,7 @@ export default function Home() {
                   </Flex>
 
                   <Flex
-                    className="basis-1/2 justify-center items-center"
+                    className="basis-1/2 max-md:basis-full justify-center items-center"
                     direction="column"
                     gap="gap-y-4 py-20"
                   >

@@ -9,7 +9,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background-color: hsl(var(--primary));
+  background-color: hsl(var(--gray));
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.3s ease;

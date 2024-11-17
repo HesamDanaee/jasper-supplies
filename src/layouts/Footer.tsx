@@ -23,13 +23,15 @@ export default function Footer() {
   return (
     <footer className="flex w-full justify-center items-center bg-background">
       <Flex className="w-full h-full" justify="between" direction="column">
+        {/* - * - * - Main Footer - * - * - */}
         <Container maxWidth="7xl">
           <Flex
             className="w-full py-12 max-lg:flex-col max-lg:items-center gap-y-10"
             justify="between"
           >
+            {/* - * - * - Company - * - * - */}
             <Flex
-              className="max-lg:w-full lg:basis-1/2 max-lg:flex-row max-lg:items-center gap-x-10"
+              className="max-lg:w-full lg:basis-1/2 max-lg:flex-col max-lg:items-center gap-x-10"
               justify="center"
               align="start"
               direction="column"
@@ -53,7 +55,7 @@ export default function Footer() {
               <Separator orientation="horizontal" />
 
               <List
-                className="max-lg:w-full lg:basis-2/5 gap-x-6 justify-center items-start flex-col"
+                className="max-lg:w-full lg:basis-2/5 max-md:flex-wrap max-md:flex-row max-md:gap-y-3 gap-x-6 justify-center items-start flex-col"
                 list={main["contact-details"]}
                 callback={({ name, value, link }) => (
                   <Flex
@@ -84,6 +86,7 @@ export default function Footer() {
               />
             </Flex>
 
+            {/* - * - * - Footer links - * - * - */}
             <List
               className="max-lg:w-full lg:basis-1/2 gap-x-6 justify-evenly items-start"
               list={main.links}
@@ -117,10 +120,11 @@ export default function Footer() {
           </Flex>
         </Container>
 
+        {/* - * - * - Bottom Footer - * - * - */}
         <Flex className="bg-secondary">
           <Container maxWidth="7xl" padding="p-5">
             <Flex
-              className="w-full justify-between"
+              className="w-full justify-between max-sm:flex-col gap-y-5"
               direction="row"
               align="center"
               justify="between"

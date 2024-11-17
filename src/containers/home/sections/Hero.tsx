@@ -21,7 +21,7 @@ export default function Hero() {
       }}
       className="w-full h-[60dvh] flex justify-center items-center"
     >
-      <Box className="w-[480px] h-[480px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+      <Box className="w-[500px] h-[500px] max-md:w-[350px] max-md:h-[350px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         {/* @ts-expect-error change it later */}
         <Slider props={slider} />
       </Box>
