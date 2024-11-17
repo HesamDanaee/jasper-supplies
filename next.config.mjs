@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
- 
-    images: {
-
-      loader:"akamai",
+  basePath:"/jasper-supplies",
+    images: { 
+      loader:"imgix",
         path: "/",
 
       },
