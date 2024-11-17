@@ -1,6 +1,6 @@
 {
     "header": {
-        "logo": "",
+        "logo": "/jasper-supplies/logo.svg",
         "navigation": {
             "initial": {
                 "color": "#450085"
@@ -1556,7 +1556,7 @@
     "footer": {
         "main": {
             "company": {
-                "logo": "/jasper-supplies/assets/logo.svg",
+                "logo": "/jasper-supplies/logo.svg",
                 "slogan": "Connecting Markets, Bridging Continents",
                 "signature": "Jasper Supplies, 2024."
             },
