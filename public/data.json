@@ -130,7 +130,7 @@
                             },
                             "items": [
                                 {
-                                    "src": "../public/assets/biscuits&wafer/Wafer.png",
+                                    "src": "/assets/biscuits&wafer/Wafer.png",
                                     "name": "wafer",
                                     "initial": {
                                         "scale": 0.5,
@@ -157,7 +157,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/biscuits&wafer/Spiral-Cookie.png",
+                                    "src": "/assets/biscuits&wafer/Spiral-Cookie.png",
                                     "name": "spiral-cookie",
                                     "initial": {
                                         "scale": 0.5,
@@ -184,7 +184,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/biscuits&wafer/Jam-Ring.png",
+                                    "src": "/assets/biscuits&wafer/Jam-Ring.png",
                                     "name": "jam-ring",
                                     "initial": {
                                         "scale": 0.5,
@@ -211,7 +211,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/biscuits&wafer/Fig-Bar.png",
+                                    "src": "/assets/biscuits&wafer/Fig-Bar.png",
                                     "name": "fig-bar",
                                     "initial": {
                                         "scale": 0.5,
@@ -238,7 +238,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/biscuits&wafer/Digestive.png",
+                                    "src": "/assets/biscuits&wafer/Digestive.png",
                                     "name": "digestive",
                                     "initial": {
                                         "scale": 0.5,
@@ -265,7 +265,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/biscuits&wafer/Crumbs.png",
+                                    "src": "/assets/biscuits&wafer/Crumbs.png",
                                     "name": "crumbs",
                                     "initial": {
                                         "scale": 0.5,
@@ -291,7 +291,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/biscuits&wafer/Chocolate.png",
+                                    "src": "/assets/biscuits&wafer/Chocolate.png",
                                     "name": "chocolate",
                                     "initial": {
                                         "scale": 0.5,
@@ -318,7 +318,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/biscuits&wafer/Chocolate-Chip.png",
+                                    "src": "/assets/biscuits&wafer/Chocolate-Chip.png",
                                     "name": "chocolate-chip",
                                     "initial": {
                                         "scale": 0.5,
@@ -345,7 +345,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/biscuits&wafer/Biscuits&Chocolate.png",
+                                    "src": "/assets/biscuits&wafer/Biscuits&Chocolate.png",
                                     "name": "title",
                                     "initial": {
                                         "scale": 0.5,
@@ -380,7 +380,7 @@
                             },
                             "items": [
                                 {
-                                    "src": "../public/assets/sea_products/sea.png",
+                                    "src": "/assets/sea_products/sea.png",
                                     "name": "sea-products__sea",
                                     "initial": {
                                         "scale": 0.5,
@@ -407,7 +407,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/sea_products/caviar.png",
+                                    "src": "/assets/sea_products/caviar.png",
                                     "name": "sea-products__caviar",
                                     "initial": {
                                         "scale": 0.5,
@@ -434,7 +434,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/sea_products/seaProducts.png",
+                                    "src": "/assets/sea_products/seaProducts.png",
                                     "name": "sea-products__title",
                                     "initial": {
                                         "scale": 0.5,
@@ -467,7 +467,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/sea_products/fish1.png",
+                                    "src": "/assets/sea_products/fish1.png",
                                     "name": "sea-products__fish1",
                                     "initial": {
                                         "scale": 0.5,
@@ -500,7 +500,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/sea_products/fish2.png",
+                                    "src": "/assets/sea_products/fish2.png",
                                     "name": "sea-products__fish2",
                                     "initial": {
                                         "scale": 0.5,
@@ -527,7 +527,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/sea_products/fish3.png",
+                                    "src": "/assets/sea_products/fish3.png",
                                     "name": "sea-products__fish3",
                                     "initial": {
                                         "scale": 0.5,
@@ -554,7 +554,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/sea_products/fish4.png",
+                                    "src": "/assets/sea_products/fish4.png",
                                     "name": "sea-products__fish4",
                                     "initial": {
                                         "scale": 0.5,
@@ -589,7 +589,7 @@
                             },
                             "items": [
                                 {
-                                    "src": "../public/assets/animal/Milk.png",
+                                    "src": "/assets/animal/Milk.png",
                                     "name": "milk",
                                     "initial": {
                                         "scale": 0.5,
@@ -616,7 +616,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/animal/Field.png",
+                                    "src": "/assets/animal/Field.png",
                                     "name": "field",
                                     "initial": {
                                         "scale": 0.5,
@@ -643,7 +643,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/animal/Animals.png",
+                                    "src": "/assets/animal/Animals.png",
                                     "name": "animals",
                                     "initial": {
                                         "scale": 0.5,
@@ -670,7 +670,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/animal/AnimalProducts.png",
+                                    "src": "/assets/animal/AnimalProducts.png",
                                     "name": "title",
                                     "initial": {
                                         "scale": 0.5,
@@ -705,7 +705,7 @@
                             },
                             "items": [
                                 {
-                                    "src": "../public/assets/herbs&spices/Saffron.png",
+                                    "src": "/assets/herbs&spices/Saffron.png",
                                     "name": "saffaron",
                                     "initial": {
                                         "scale": 0.5,
@@ -732,7 +732,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/herbs&spices/Cardamom.png",
+                                    "src": "/assets/herbs&spices/Cardamom.png",
                                     "name": "cardamom",
                                     "initial": {
                                         "scale": 0.5,
@@ -759,7 +759,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/herbs&spices/Flower.png",
+                                    "src": "/assets/herbs&spices/Flower.png",
                                     "name": "flower",
                                     "initial": {
                                         "scale": 0.5,
@@ -786,7 +786,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/herbs&spices/Mild-Green.png",
+                                    "src": "/assets/herbs&spices/Mild-Green.png",
                                     "name": "mild-green",
                                     "initial": {
                                         "scale": 0.5,
@@ -813,7 +813,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/herbs&spices/Narrow-Flower.png",
+                                    "src": "/assets/herbs&spices/Narrow-Flower.png",
                                     "name": "narrow-flower",
                                     "initial": {
                                         "scale": 0.5,
@@ -840,7 +840,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/herbs&spices/Narrow-Yellow.png",
+                                    "src": "/assets/herbs&spices/Narrow-Yellow.png",
                                     "name": "narrow-yellow",
                                     "initial": {
                                         "scale": 0.5,
@@ -867,7 +867,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/herbs&spices/Orange-Spring.png",
+                                    "src": "/assets/herbs&spices/Orange-Spring.png",
                                     "name": "orange-spring",
                                     "initial": {
                                         "scale": 0.5,
@@ -894,7 +894,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/herbs&spices/Parsley.png",
+                                    "src": "/assets/herbs&spices/Parsley.png",
                                     "name": "parsley",
                                     "initial": {
                                         "scale": 0.5,
@@ -921,7 +921,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/herbs&spices/Pink-Flower.png",
+                                    "src": "/assets/herbs&spices/Pink-Flower.png",
                                     "name": "pinkFlower",
                                     "initial": {
                                         "scale": 0.5,
@@ -948,7 +948,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/herbs&spices/Herbs&Spices.png",
+                                    "src": "/assets/herbs&spices/Herbs&Spices.png",
                                     "name": "title",
                                     "initial": {
                                         "scale": 0.5,
@@ -983,7 +983,7 @@
                             },
                             "items": [
                                 {
-                                    "src": "../public/assets/honey/Hive.png",
+                                    "src": "/assets/honey/Hive.png",
                                     "name": "hive",
                                     "initial": {
                                         "scale": 0.5,
@@ -1010,7 +1010,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/honey/Bee-Medium.png",
+                                    "src": "/assets/honey/Bee-Medium.png",
                                     "name": "bee-medium",
                                     "initial": {
                                         "scale": 0.5,
@@ -1037,7 +1037,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/honey/Bee-Small.png",
+                                    "src": "/assets/honey/Bee-Small.png",
                                     "name": "bee-small",
                                     "initial": {
                                         "scale": 0.5,
@@ -1064,7 +1064,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/honey/Beeswax.png",
+                                    "src": "/assets/honey/Beeswax.png",
                                     "name": "beeswax",
                                     "initial": {
                                         "scale": 0.5,
@@ -1091,7 +1091,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/honey/Honey.png",
+                                    "src": "/assets/honey/Honey.png",
                                     "name": "honey",
                                     "initial": {
                                         "scale": 0.5,
@@ -1126,7 +1126,7 @@
                             },
                             "items": [
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Almonds.png",
+                                    "src": "/assets/nuts&dried_fruits/Almonds.png",
                                     "name": "almonds",
                                     "initial": {
                                         "scale": 0.5,
@@ -1153,7 +1153,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Cashew.png",
+                                    "src": "/assets/nuts&dried_fruits/Cashew.png",
                                     "name": "cashew",
                                     "initial": {
                                         "scale": 0.5,
@@ -1180,7 +1180,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Dates.png",
+                                    "src": "/assets/nuts&dried_fruits/Dates.png",
                                     "name": "dates",
                                     "initial": {
                                         "scale": 0.5,
@@ -1207,7 +1207,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Fig.png",
+                                    "src": "/assets/nuts&dried_fruits/Fig.png",
                                     "name": "fig",
                                     "initial": {
                                         "scale": 0.5,
@@ -1234,7 +1234,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Hazelnut.png",
+                                    "src": "/assets/nuts&dried_fruits/Hazelnut.png",
                                     "name": "hazelnut",
                                     "initial": {
                                         "scale": 0.5,
@@ -1261,7 +1261,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Pistachio.png",
+                                    "src": "/assets/nuts&dried_fruits/Pistachio.png",
                                     "name": "pistachio",
                                     "initial": {
                                         "scale": 0.5,
@@ -1288,7 +1288,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Plum.png",
+                                    "src": "/assets/nuts&dried_fruits/Plum.png",
                                     "name": "plum",
                                     "initial": {
                                         "scale": 0.5,
@@ -1315,7 +1315,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Raisins.png",
+                                    "src": "/assets/nuts&dried_fruits/Raisins.png",
                                     "name": "raisins",
                                     "initial": {
                                         "scale": 0.5,
@@ -1342,7 +1342,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Walnut.png",
+                                    "src": "/assets/nuts&dried_fruits/Walnut.png",
                                     "name": "Walnut",
                                     "initial": {
                                         "scale": 0.5,
@@ -1369,7 +1369,7 @@
                                     }
                                 },
                                 {
-                                    "src": "../public/assets/nuts&dried_fruits/Nuts&DriedFruits.png",
+                                    "src": "/assets/nuts&dried_fruits/Nuts&DriedFruits.png",
                                     "name": "nuts&driedFruits",
                                     "initial": {
                                         "scale": 0.5,
@@ -1532,7 +1532,7 @@
                     "description": "Jasper Global Supplies specializes in general trading, offering a diverse range of products tailored to meet the needs of our global customers. We provide expert advice on product quality, market trends, and sourcing strategies, ensuring informed decision-making. Alongside top-quality goods, we offer commercial and financial solutions to streamline the supply process. Trust us for a comprehensive approach to global trade, combining product expertise with strategic guidance.",
                     "block_name": "company",
                     "cta": "See Full Story",
-                    "photo": "../public/assets/MoreThanACompany.svg"
+                    "photo": "/assets/MoreThanACompany.svg"
                 },
                 {
                     "title": "PRIME TREASURES",
@@ -1540,7 +1540,7 @@
                     "description": "Our export and import company is dedicated to supplying premium products that are carefully curated to meet the specific needs of our valued customers markets. With a focus on quality and market alignment, we offer a diverse selection of top-tier goods across various industries. Each product is chosen for its superior standards, ensuring it meets the demands and preferences of global consumers. We pride ourselves on delivering tailored solutions that support the growth and success of our customers in their respective markets.",
                     "block_name": "treasures",
                     "cta": "See Full Story",
-                    "photo": "../public/assets/PrimeTreasures.svg"
+                    "photo": "/assets/PrimeTreasures.svg"
                 },
                 {
                     "title": "ECO-FRIENDLY CHAINS",
@@ -1548,7 +1548,7 @@
                     "description": "We are committed to sustainability across all facets of general trading, from responsible supply chain management to efficient, eco-friendly logistics. We offer a wide variety of products, ensuring that both quality and environmental impact are carefully managed. As industry professionals, we provide clients with in-depth knowledge of sustainable sourcing practices, market dynamics, and product quality standards. Rely on us for expert solutions that drive both business growth and sustainable practices in global trade.",
                     "block_name": "sustainability",
                     "cta": "See Full Story",
-                    "photo": "../public/assets/friendly.svg"
+                    "photo": "/assets/friendly.svg"
                 }
             ]
         }
