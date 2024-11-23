@@ -1,5 +1,5 @@
 import { cn } from "@/libs/classNames";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { IBlobs } from "./Slider.type";
 
 interface BlobProps {
@@ -13,7 +13,7 @@ export default function Blob({ blobs, color }: BlobProps) {
   return (
     <motion.svg
       className={cn(
-        "w-full h-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-1",
+        "w-full h-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[60%] z-1",
         color
       )}
       viewBox="0 0 500 500"

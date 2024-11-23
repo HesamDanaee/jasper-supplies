@@ -3,7 +3,7 @@ import Box from "@/components/common/Box";
 import Slider from "@/components/slider/Slider";
 import React from "react";
 import heroData from "@/public/data.json";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 export default function Hero() {
   const {

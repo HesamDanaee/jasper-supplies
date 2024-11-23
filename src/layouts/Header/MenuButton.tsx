@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, Transition, SVGMotionProps, MotionProps } from "framer-motion";
+import { motion, Transition, SVGMotionProps, MotionProps } from "motion/react";
 import Flex from "@/components/common/Flex";
 
 interface Props extends SVGMotionProps<MotionProps> {

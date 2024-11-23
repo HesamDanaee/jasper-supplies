@@ -1,7 +1,9 @@
+"use client";
+
 import Box from "@/components/common/Box";
 import Flex from "@/components/common/Flex";
 import Typography from "@/components/common/Typography";
-import React from "react";
+import React, { useRef } from "react";
 import sections from "@/public/data.json";
 import List from "@/components/common/List";
 import Container from "@/components/common/Container";
@@ -9,6 +11,7 @@ import Image from "next/image";
 import Hero from "./sections/Hero";
 import { cn } from "@/libs/classNames";
 import Button from "@/components/common/Button";
+import { motion } from "motion/react";
 
 export default function Home() {
   const {
@@ -16,12 +19,12 @@ export default function Home() {
       home: { content_blocks },
     },
   } = sections;
-
+  const scrollRef = useRef(null);
   return (
-    <Box className="h-auto bg-gradient-to-b from-white via-babypowder to-smoke">
+    <Box className="h-auto bg-background">
       <Hero />
 
-      <Flex className="bg-foreground/5">
+      <Flex>
         <Flex
           align="center"
           justify="center"
@@ -47,52 +50,76 @@ export default function Home() {
                     "flex-wrap max-md:px-10 max-sm:px-3"
                   )}
                 >
-                  <Flex
+                  {/* - * - * -  - * - * - */}
+                  <motion.div
                     className={cn("basis-1/2 max-md:basis-full")}
-                    direction="column"
-                    gap="gap-y-12 py-20 max-md:gap-y-4"
+                    initial={{ opacity: 0, translateY: "15%" }}
+                    whileInView={{
+                      translateY: "0%",
+                      opacity: 1,
+                      transition: {
+                        delay: 0.1,
+                        ease: "backOut",
+                      },
+                    }}
+                    viewport={{ root: scrollRef, once: true }}
                   >
-                    <Typography
-                      variant="h1"
-                      fontWeight="black"
-                      color="text-primary"
-                      className="text-6xl max-md:text-3xl tracking-widest"
+                    <Flex
+                      direction="column"
+                      gap="gap-y-12 py-20 max-md:gap-y-4"
                     >
-                      {title}
-                    </Typography>
-                    <Typography
-                      variant="h4"
-                      color="text-secondary"
-                      className="font-normal italic relative after:w-1 after:h-full after:absolute after:left-0 after:top-0 after:bg-secondary after:-translate-x-2"
-                    >
-                      {subtitle}
-                    </Typography>
-                    <Typography
-                      variant="body1"
-                      fontWeight="normal"
-                      color="text-gray"
-                    >
-                      {description}
-                    </Typography>
+                      <Typography
+                        variant="h1"
+                        fontWeight="black"
+                        color="text-primary"
+                        className="text-6xl max-md:text-3xl tracking-widest"
+                      >
+                        {title}
+                      </Typography>
+                      <Typography
+                        variant="h4"
+                        color="text-secondary"
+                        className="font-normal italic relative after:w-1 after:h-full after:absolute after:left-0 after:top-0 after:bg-secondary after:-translate-x-2"
+                      >
+                        {subtitle}
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        fontWeight="normal"
+                        color="text-gray"
+                      >
+                        {description}
+                      </Typography>
 
-                    <Button className="w-1/2 !bg-primary">
-                      <Typography color="text-snow">{cta}</Typography>
-                    </Button>
-                  </Flex>
+                      <Button className="w-1/2 !bg-primary">
+                        <Typography color="text-snow">{cta}</Typography>
+                      </Button>
+                    </Flex>
+                  </motion.div>
 
-                  <Flex
+                  <motion.div
                     className="basis-1/2 max-md:basis-full justify-center items-center"
-                    direction="column"
-                    gap="gap-y-4 py-20"
+                    initial={{ opacity: 0, translateY: "10%" }}
+                    whileInView={{
+                      translateY: "0%",
+                      opacity: 1,
+                      transition: {
+                        delay: 0.3,
+                        ease: "backOut",
+                      },
+                    }}
+                    viewport={{ root: scrollRef, once: true }}
                   >
-                    <Image
-                      src={photo}
-                      width={1000}
-                      height={1000}
-                      className="w-auto h-auto"
-                      alt={block_name}
-                    />
-                  </Flex>
+                    <Flex direction="column" gap="gap-y-4 py-20">
+                      <Image
+                        src={photo}
+                        width={1000}
+                        height={1000}
+                        className="w-auto h-auto"
+                        alt={block_name}
+                      />
+                    </Flex>
+                  </motion.div>
                 </Flex>
               )}
             />

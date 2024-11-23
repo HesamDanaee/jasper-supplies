@@ -21,7 +21,7 @@ export default function Footer() {
   } = jsonData;
 
   return (
-    <footer className="flex w-full justify-center items-center bg-background">
+    <footer className="flex w-full justify-center items-center bg-seasalt">
       <Flex className="w-full h-full" justify="between" direction="column">
         {/* - * - * - Main Footer - * - * - */}
         <Container maxWidth="7xl">
@@ -37,20 +37,22 @@ export default function Footer() {
               direction="column"
               gap="gap-y-2"
             >
-              <Image
-                src={main.company.logo}
-                width={300}
-                height={300}
-                alt="logo"
-                className="w-14 h-w-14 drop-shadow-2xl"
-              />
+              <Flex direction="column" gap="gap-y-4">
+                <Image
+                  src={main.company.logo}
+                  width={300}
+                  height={300}
+                  alt="logo"
+                  className="w-24 h-w-24 drop-shadow-2xl"
+                />
 
-              <Typography variant="h4" color="text-secondary">
-                {main.company.slogan}
-              </Typography>
-              <Typography variant="body1" fontWeight="medium">
-                {main.company.signature}
-              </Typography>
+                <Typography variant="h4" color="text-secondary">
+                  {main.company.slogan}
+                </Typography>
+                <Typography variant="body1" fontWeight="medium">
+                  {main.company.signature}
+                </Typography>
+              </Flex>
 
               <Separator orientation="horizontal" />
 
@@ -93,9 +95,9 @@ export default function Footer() {
               callback={({ title, links }) => (
                 <Flex direction="column" justify="evenly" gap="gap-y-4">
                   <Typography
-                    variant="body2"
-                    color="text-foreground"
-                    fontWeight="medium"
+                    variant="body1"
+                    color="text-gray"
+                    fontWeight="bold"
                   >
                     {title}
                   </Typography>

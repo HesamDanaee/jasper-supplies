@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Flex from "@/components/common/Flex";
 import List from "@/components/common/List";
 import Typography from "@/components/common/Typography";
@@ -8,19 +8,14 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/logo.svg";
 import "./style.css";
-import { Phone } from "@phosphor-icons/react";
+import { WhatsappLogo } from "@phosphor-icons/react";
 import Button from "@/components/common/Button";
-import { useScroll, useMotionValueEvent } from "framer-motion";
+import { useScroll, useMotionValueEvent } from "motion/react";
 import { useState } from "react";
 import { cn } from "@/libs/classNames";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/common/dropdown-menu";
 import Container from "@/components/common/Container";
 import BurgerMenu from "./BurgerMenu";
+import Language from "./Language";
 
 export default function Header() {
   const [passedHeight, setPassedHeight] = useState(false);
@@ -52,19 +47,19 @@ export default function Header() {
     >
       <Container maxWidth="full">
         <Flex align="center" justify="between" className="w-full">
+          {/* - * - * - Logo - * - * - */}
           <Flex
             align="center"
             justify="center"
             className="basis-1/6 max-md:basis-3/6 max-md:justify-start"
           >
-            {/* - * - * - Logo - * - * - */}
             <Link href="/">
               <Image
                 alt="logo"
                 src={logo}
                 width={200}
                 height={200}
-                className="w-16 h-16 md:min-w-16 md:min-h-16 max-md:w-13 max-md:h-13 relative before:w-full before:h-2 before:bg-secondary before:absolute before:top-0 before:left-0"
+                className="w-24 h-2w-24 md:min-w-16 md:min-h-16 max-md:w-13 max-md:h-13 relative before:w-full before:h-2 before:bg-secondary before:absolute before:top-0 before:left-0"
               />
             </Link>
           </Flex>
@@ -78,7 +73,7 @@ export default function Header() {
           >
             <List
               list={navigation.links}
-              className="gap-x-7 items-center py-10"
+              className="gap-x-7 items-center py-10 tracking-wider"
               callback={({ name, url }, index) => (
                 <Link
                   key={`${name}-${index}`}
@@ -132,7 +127,20 @@ export default function Header() {
                     <Button
                       variant="contained"
                       color="primary"
-                      startIcon={<Phone className="w-6 h-6 text-snow" />}
+                      className="w-auto h-auto bg-primary !p-3"
+                      startIcon={
+                        <motion.div
+                          initial={{
+                            rotate: 0,
+                          }}
+                          whileHover={{
+                            rotate: -135,
+                            transition: { type: "spring", bounce: 0.25 },
+                          }}
+                        >
+                          <WhatsappLogo className="w-6 h-6 text-white" />{" "}
+                        </motion.div>
+                      }
                     >
                       <Typography
                         variant="body1"
@@ -145,23 +153,7 @@ export default function Header() {
                     </Button>
                   </Link>
                 ) : (
-                  <DropdownMenu>
-                    <DropdownMenuTrigger className="py-2 px-3 rounded-sm bg-primary">
-                      <Typography
-                        variant="body1"
-                        fontWeight="medium"
-                        className="max-md:text-sm"
-                        color="text-snow"
-                      >
-                        {name}
-                      </Typography>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent className="w-auto ">
-                      {options?.map(({ name, id }) => (
-                        <DropdownMenuItem key={id}>{name}</DropdownMenuItem>
-                      ))}
-                    </DropdownMenuContent>
-                  </DropdownMenu>
+                  <Language trigger={name} options={options ?? []} />
                 )
               }
             />

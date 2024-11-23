@@ -30,7 +30,7 @@ export default function Slider({ props }: SliderProps) {
     <Flex className="w-[500px] h-[500px] max-md:w-[350px] max-md:h-[350px] relative">
       {/* - * - * - Blob - * - * - */}
 
-      <Blob
+      {/* <Blob
         blobs={blobs}
         color={
           {
@@ -42,11 +42,11 @@ export default function Slider({ props }: SliderProps) {
             nuts: "fill-nuts",
           }[colors[activeSlide - 1]]
         }
-      />
+      /> */}
 
       {/* - * - * - Slides - * - * - */}
 
-      <Flex className="w-full h-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-transparent rounded-full z-2">
+      <Flex className="w-full h-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[60%] bg-transparent rounded-full z-10">
         <Slide
           slide={slides[activeSlide - 1]}
           changeSlide={handleChangeSlide}

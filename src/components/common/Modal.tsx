@@ -1,5 +1,5 @@
 import { useState, ReactNode, ReactElement, cloneElement } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Flex from "./Flex";
 import Button from "./Button";
 

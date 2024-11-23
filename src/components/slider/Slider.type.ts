@@ -81,4 +81,19 @@ export interface IBar {
       };
     };
   };
+  sliderButtons: {
+    initial: {
+      [key: string]: string | number;
+    };
+    animate: {
+      [key: string]: string | number;
+    };
+    whileHover: {
+      [key: string]: string | number;
+    };
+    transition: {
+      [key: string]: string | number;
+    };
+    buttons: { [key: string]: string | number }[];
+  };
 }

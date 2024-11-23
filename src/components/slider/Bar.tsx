@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { IBar } from "./Slider.type";
 import Flex from "../common/Flex";
 
@@ -8,10 +8,10 @@ interface BarProps {
 }
 
 export default function Bar({ props }: BarProps) {
-  const { initial, animate, transition, line } = props;
+  const { initial, animate, transition, line, sliderButtons } = props;
 
   return (
-    <Flex className="w-full h-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-50 rounded-full b">
+    <Flex className="w-full h-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full z-1">
       <motion.svg
         width="500"
         height="296"
@@ -33,8 +33,9 @@ export default function Bar({ props }: BarProps) {
         />
       </motion.svg>
 
+      {/* - * - * - Moving Circle - * - * - */}
       <motion.div
-        className="w-1 absolute left-1/2 top-full -translate-x-1/2 -translate-y-full origin-top z-50"
+        className="w-1 absolute left-1/2 top-full -translate-x-1/2 -translate-y-full origin-top z-1"
         initial={line.initial}
         animate={line.animate}
         transition={{
@@ -51,6 +52,7 @@ export default function Bar({ props }: BarProps) {
           animate={line.dot.animate}
           transition={{
             ...line.dot.transition,
+
             repeat:
               line.dot.transition.repeat === -1
                 ? Infinity
@@ -58,6 +60,18 @@ export default function Bar({ props }: BarProps) {
           }}
         />
       </motion.div>
+
+      {/* - * - * - Circles - * - * - */}
+
+      {sliderButtons.buttons.map((className, z) => (
+        <motion.div
+          key={z}
+          initial={sliderButtons.initial}
+          animate={sliderButtons.animate}
+          transition={sliderButtons.transition}
+          whileHover={sliderButtons.whileHover}
+        />
+      ))}
     </Flex>
   );
 }
