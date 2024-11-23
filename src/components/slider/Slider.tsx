@@ -1,7 +1,7 @@
 "use client";
 
 import Flex from "../common/Flex";
-import Blob from "./Blob";
+// import Blob from "./Blob";
 import Slide from "./Slide";
 import { ISlider } from "./Slider.type";
 import { useState } from "react";
@@ -18,7 +18,7 @@ export default function Slider({ props }: SliderProps) {
   const handleChangeSlide = () =>
     setActiveSlide((prev) => (prev === slides.length ? 1 : prev + 1));
 
-  const { blobs, slides, bar, colors } = props;
+  const {  slides, bar,  } = props;
 
   useTimer({
     duration: 5,
